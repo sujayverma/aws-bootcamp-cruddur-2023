@@ -27,5 +27,5 @@ EXPOSE ${PORT}
 
 # CMD (Command)
 # python3 -m flask run --host=0.0.0.0 --port=4527
-# -m stand for module
+# -m stand for modules 
 CMD ["python3", "-m", "Flask", "run", "--host=0.0.0.0", "--port=4567"]
