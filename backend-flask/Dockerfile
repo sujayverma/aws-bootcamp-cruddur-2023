@@ -21,6 +21,7 @@ COPY . .
 # Set Enivironment variables (ENV VARS)
 # Inside container and will remain set when container is running
 ENV FLASK_ENV=development
+ENV FLASK_APP=app.py
 
 
 EXPOSE ${PORT}
@@ -28,4 +29,4 @@ EXPOSE ${PORT}
 # CMD (Command)
 # python3 -m flask run --host=0.0.0.0 --port=4527
 # -m stand for module
-CMD ["python", "-m", "Flask", "run", "--host=0.0.0.0", "--port=4567"]
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=4567"]
