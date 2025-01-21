@@ -2,7 +2,7 @@ FROM python:3.10-slim-bullseye
 
 # Inside the container.
 # make a new folder inside the container.
-WORKDIR /backend- flask
+WORKDIR /backend-flask
 
 # Outside container --> Inside container
 # this contains the libraries want to install to run the app
